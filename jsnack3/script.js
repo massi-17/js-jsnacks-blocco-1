@@ -9,7 +9,17 @@ let numeri = [];
    
 
 for (let i = 0; i < 5; i++ ) {
+
     let numero = parseFloat(prompt('Inserisci un numero'));
+    
+
+    if (isNaN (numero)) {
+
+        alert('Non è un numero valido!');
+        numero = parseInt(prompt('Inserisci un numero'));
+     
+    }
+
     numeri.push(numero);
 }
 
@@ -27,8 +37,17 @@ console.log('La somma dei numeri è ' + somma);
 
 // while (numeri.length < 5 ) {
 //     let numero = parseFloat( prompt ('Inserisci un numero') )
-//     if (numero !== isNaN)
-//     numeri.push(numero)
+    
+    
+
+// if (isNaN (numero)) {
+
+//     alert('Non è un numero valido!');
+    
+ 
+// } else {
+//     numeri.push(numero);
+// }
 // }
 
   
@@ -38,3 +57,4 @@ console.log('La somma dei numeri è ' + somma);
 // }
 
 // console.log('La somma dei numeri è ' + somma);
+
